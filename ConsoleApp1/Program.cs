@@ -26,6 +26,9 @@ namespace ConsoleApp1
                     Console.WriteLine("{0}*{1}={2}", a, b, a * b);
                     break;
                 case '/':
+                    if (b == 0)
+                        Console.WriteLine("На ноль делить нельзя");
+                    else
                     Console.WriteLine("{0}/{1}={2}", a, b, a / b);
                     break;
                 default:
